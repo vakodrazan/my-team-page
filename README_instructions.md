@@ -8,11 +8,14 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://github.com/vakodrazan/my_team_pages">
+      Here where I did all the works
+    </a>
+    <a href="https://github.com/vakodrazan/my-team-page">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://thirsty-agnesi-0d9765.netlify.app/">
       Solution
     </a>
   </h3>
@@ -37,6 +40,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 -   Where can I see your demo?
+    - You can my demo in the two links that I share above
 -   What was your experience?
 -   What have you learned/improved?
 -   Your wisdom? :)
@@ -59,6 +63,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
+-   Website [your-website.com](https://thirsty-agnesi-0d9765.netlify.app/)
+-   GitHub [@your-username](https://github.com/vakodrazan/my_team_pages)
 -   Twitter [@your-twitter](https://{twitter.com/your-username})
