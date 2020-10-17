@@ -1,0 +1,69 @@
+@import "variables";
+
+.article__section__link {
+    position: relative;
+    color: #000;
+    display: flex;
+    flex-direction: column-reverse;
+
+    > h3 {
+        --font-size: 14px;
+        font-size: var(--font-size);
+        font-weight: 600;
+
+        @media (min-width: $tablet-breakpoint) {
+            --font-size: 18px;
+        }
+    }
+
+    > p {
+        // Use this property to rotate the element
+        writing-mode: vertical-rl;
+        font-family: "PT Serif", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+
+}
+
+.article {
+    > .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.article__section {
+    padding-bottom: 2rem;
+    // Each section should only take this space 45% when it is two rows 
+    // but 30% when it is three rows
+    flex-basis: 44%;
+
+    @media (min-width: $tablet-breakpoint) {
+        flex-basis: 30%;
+    }
+}
+
+
+.article__section:nth-child(even) {
+    padding-top: 54px;
+    padding-right: 1rem;
+
+    @media (min-width: $tablet-breakpoint) {
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+}
+
+// Crab the element in the second row
+@media (min-width: $tablet-breakpoint) {
+    .article__section:nth-child(3n - 1) {
+        padding-top: 54px;
+    }
+}

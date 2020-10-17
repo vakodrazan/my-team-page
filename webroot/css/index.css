@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-600.woff2") format(woff2), url("../fonts/montserrat-600.woff") format(woff); }
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/poppins-400.woff2") format(woff2), url("../fonts/poppins-400.woff") format(woff); }
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../fonts/poppins-600.woff2") format(woff2), url("../fonts/poppins-600.woff") format(woff); }
+
+@font-face {
+  font-family: "PT Serif Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("PT Serif Regular"), local("PT-Serif-Regular"), url("../fonts/ptserif-400.woff2") format(woff2), url("../fonts/ptserif-400.woff") format(woff); }
+
+@font-face {
+  font-family: "PT Serif Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("PT Serif Bold"), local("PT-Serif-Bold"), url("../fonts/ptserif-700.woff2") format(woff2), url("../fonts/ptserif-700.woff") format(woff); }
+
+:root {
+  --font_size: 18px; }
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: var(--font_size);
+  margin: 0;
+  background-color: #FAFAFA;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline #b288ff;
+  opacity: 0.8; }
+
+.header > .container > h1 {
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
+  --font_size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  padding-top: 17px;
+  padding-bottom: 38px; }
+  @media (min-width: 1440px) {
+    .header > .container > h1 {
+      padding: 0; } }
+
+@media (min-width: 1440px) {
+  .header > .container {
+    padding-top: 110px;
+    padding-bottom: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+
+.header__info {
+  --max-width: 335px;
+  max-width: var(--max-width); }
+  .header__info > h2 {
+    --font_size: 18px;
+    font-size: var(--font_size);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 10px; }
+  .header__info > p {
+    --font_size: 14px;
+    font-size: var(--font_size);
+    padding-bottom: 38px; }
+    @media (min-width: 650px) {
+      .header__info > p {
+        --font_size: 18px; } }
+  @media (min-width: 650px) {
+    .header__info {
+      --max-width: 440px; } }
+
+.masthead {
+  display: none; }
+
+.container {
+  padding-right: 18px;
+  padding-left: 12px; }
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0; } }
+
+.article__section__link {
+  position: relative;
+  color: #000;
+  display: flex;
+  flex-direction: column-reverse; }
+  .article__section__link > h3 {
+    --font-size: 14px;
+    font-size: var(--font-size);
+    font-weight: 600; }
+    @media (min-width: 650px) {
+      .article__section__link > h3 {
+        --font-size: 18px; } }
+  .article__section__link > p {
+    writing-mode: vertical-rl;
+    font-family: "PT Serif", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 100%; }
+
+.article > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.article__section {
+  padding-bottom: 2rem;
+  flex-basis: 44%; }
+  @media (min-width: 650px) {
+    .article__section {
+      flex-basis: 30%; } }
+
+.article__section:nth-child(even) {
+  padding-top: 54px;
+  padding-right: 1rem; }
+  @media (min-width: 650px) {
+    .article__section:nth-child(even) {
+      padding-top: 0;
+      padding-right: 0; } }
+
+@media (min-width: 650px) {
+  .article__section:nth-child(3n - 1) {
+    padding-top: 54px; } }
+
+.footer {
+  --padding_top: 56px;
+  --padding_bottom: 27px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: var(--padding_top);
+  padding-bottom: var(--padding_bottom); }
+  .footer > small {
+    --font_size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font_size);
+    color: #A9A9A9; }
+  @media (min-width: 650px) {
+    .footer {
+      --padding_top: 77px;
+      --padding_bottom: 30px; } }
